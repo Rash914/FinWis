@@ -1,1 +1,42 @@
+# This is the name of the automation workflow
+name: Update Fund Data
 
+# This section defines WHEN the workflow will run
+on:
+  schedule:
+    # This is a CRON schedule. It means "run at 00:00 (midnight) UTC every day."
+    # This is approximately 5:30 AM in India.
+    - cron: '0 0 * * *'
+
+  # This line allows you to also run the workflow manually by clicking a button on the GitHub "Actions" tab.
+  workflow_dispatch:
+
+# This section defines WHAT the workflow will do
+jobs:
+  update-json:
+    # The robot will run on a standard Linux machine (ubuntu-latest)
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out a copy of your repository's code
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up the Python programming language environment
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      # Step 3: Run the Python script you created earlier
+      - name: Run the update script
+        run: python update_funds.py
+
+      # Step 4: Commit the changes back to your repository
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add fund_data.json
+          # This next line is smart: it only commits if the file has actually changed
+          git diff --staged --quiet || git commit -m "Update fund data"
+          git push
