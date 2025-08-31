@@ -1,1 +1,90 @@
-
+{
+  "funds": {
+    "nifty50": [
+      {
+        "name": "UTI Nifty 50 Index Fund",
+        "fiveYearReturnCAGR": 14.8,
+        "expenseRatio": 0.20,
+        "deepLinkUri": "groww.in/mutual-funds/uti-nifty-50-index-fund-direct-growth"
+      },
+      {
+        "name": "HDFC Index Fund - Nifty 50 Plan",
+        "fiveYearReturnCAGR": 14.9,
+        "expenseRatio": 0.20,
+        "deepLinkUri": "groww.in/mutual-funds/hdfc-index-fund-nifty-50-plan-direct-plan-growth"
+      }
+    ],
+    "flexiCap": [
+      {
+        "name": "Parag Parikh Flexi Cap Fund",
+        "fiveYearReturnCAGR": 19.5,
+        "expenseRatio": 0.62,
+        "deepLinkUri": "groww.in/mutual-funds/parag-parikh-flexi-cap-fund-direct-growth"
+      }
+    ],
+    "midCap": [
+       {
+        "name": "Motilal Oswal Midcap Fund",
+        "fiveYearReturnCAGR": 24.1,
+        "expenseRatio": 0.69,
+        "deepLinkUri": "groww.in/mutual-funds/motilal-oswal-midcap-fund-direct-plan-growth"
+      }
+    ],
+    "smallCap": [
+       {
+        "name": "Quant Small Cap Fund",
+        "fiveYearReturnCAGR": 45.1,
+        "expenseRatio": 0.77,
+        "deepLinkUri": "groww.in/mutual-funds/quant-small-cap-fund-growth-option-direct-plan"
+      }
+    ],
+    "international": [
+       {
+        "name": "Motilal Oswal S&P 500 Index Fund",
+        "fiveYearReturnCAGR": 18.2,
+        "expenseRatio": 0.49,
+        "deepLinkUri": "groww.in/mutual-funds/motilal-oswal-sp-500-index-fund-direct-plan"
+      }
+    ],
+    "liquidDebt": [
+       {
+        "name": "Parag Parikh Liquid Fund",
+        "fiveYearReturnCAGR": 6.8,
+        "expenseRatio": 0.22,
+        "deepLinkUri": "groww.in/mutual-funds/parag-parikh-liquid-fund-direct-growth"
+      }
+    ],
+    "shortTermDebt": [
+        {
+        "name": "HDFC Short Term Debt Fund",
+        "fiveYearReturnCAGR": 7.6,
+        "expenseRatio": 0.30,
+        "deepLinkUri": "groww.in/mutual-funds/hdfc-short-term-debt-fund-direct-plan-growth-option"
+      }
+    ],
+    "goldEtf": [
+       {
+        "name": "HDFC Gold ETF",
+        "fiveYearReturnCAGR": 15.5,
+        "expenseRatio": 0.59,
+        "deepLinkUri": "groww.in/etfs/hdfc-gold-etf"
+      }
+    ],
+    "silverEtf": [
+      {
+        "name": "ICICI Prudential Silver ETF",
+        "fiveYearReturnCAGR": 19.8,
+        "expenseRatio": 0.40,
+        "deepLinkUri": "groww.in/etfs/icici-prudential-silver-etf"
+      }
+    ],
+    "reits": [
+      {
+        "name": "Mindspace Business Parks REIT",
+        "fiveYearReturnCAGR": 8.5,
+        "expenseRatio": 0.8,
+        "deepLinkUri": "groww.in/stocks/mindspace-business-parks-reit"
+      }
+    ]
+  }
+}
